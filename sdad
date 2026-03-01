@@ -1,3 +1,5 @@
+
+<!DOCTYPE html>
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
@@ -117,7 +119,7 @@ button:hover{
 <div class="card">
     <h1>Chúc Mừng 8/3 🌸</h1>
     <img class="header-image"
-     src="https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/645442029_2122957591814284_4269350942219643126_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFLOHBhb0eVjvAzt0wWHH43f-ikHVrr4i5_6KQdWuviLvrzKRHJk5EvfxMlgCMRMVEpJiiJGPalPGlLtcchf_mf&_nc_ohc=Nwg-FmdV2bgQ7kNvwHBDCS8&_nc_oc=AdnUIDEKVcgJa_nb9-0xHmnT14mXxoo5F4xhbcMGWCBt_qzcRFaC-M-OcaeXCMEvlW4&_nc_zt=23&_nc_ht=scontent.fsgn5-10.fna&_nc_gid=i--ZBUPb8c_Mm6VzZEGMbQ&_nc_ss=8&oh=00_AfuiIBItrqF63Fy9qZCiMAvng8ZWMMYDAcwLDNL-ylkgiw&oe=69AA1EB2"
+     src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/645500551_2122970441812999_3359133274551270121_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeGkrVEEGS7W6pXmQwEmhr35o6z0mq_xceOjrPSar_Fx46vZIFxgb77l0ZtUM-NMasRHeSIdqrl2jSaqffvB_MYT&_nc_ohc=Dq0xCkhruHMQ7kNvwFtIN3u&_nc_oc=Adm_PGnrw75-RexdDx5qqBRXEIijZxG4cFXInNc91dWUrmkrfDB36lYlxWmdkP7UXPQ&_nc_zt=23&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=VnTmMgucKIbf2MGfTlUkWA&_nc_ss=8&oh=00_Afu0VUVuyZA-18EUKCQ6pawtcJcNZ0qs0iMSX4epcV2jgg&oe=69AA2D80"
      alt="Ảnh 8/3 dễ thương"
      style="width:200px; height:200px; object-fit:cover; display:block; margin:20px auto; border-radius:20px;">
     <p>Nhập mật khẩu để mở quà bí mật 🎁</p>
@@ -129,12 +131,12 @@ button:hover{
 
     <!-- Ảnh quà (bạn có thể thay link ảnh của riêng bạn vào đây) -->
     <img id="giftImage" 
-    src="222.jpg" 
+    src="https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.30808-6/644113360_2122970658479644_5788638324173951982_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeH93bCykiF2sS48HOmysVhldXh_eSsyDGN1eH95KzIMY1mGdug_hW1pZDEaX3Q6KZI9SP2ZG9j5juuh63J0hU7K&_nc_ohc=FokPQWWZOEAQ7kNvwFMcpIc&_nc_oc=Adns4dtotE_6mx-TImmnKz0eU8EnE5rhRC5Iuk3-mwQS-Du6VUv-NJpNNH7S5kJUb2o&_nc_zt=23&_nc_ht=scontent.fsgn5-3.fna&_nc_gid=YJaCyFvvfYfeftoKeCltVA&_nc_ss=8&oh=00_AfuJtUZ6o42903hqXufgdA_g5mqo5betMoyjdsdhELNmEA&oe=69AA3A0B" 
     alt="Quà 8/3">
 </div>
 
 <script>
-const correctPassword = "thuthaodangiu"; // 🔐 Đổi mật khẩu tại đây
+const correctPassword = "17102025"; // 🔐 Đổi mật khẩu tại đây
 
 function checkPassword(){
     let password = document.getElementById("passwordInput").value;
@@ -142,7 +144,7 @@ function checkPassword(){
     let image = document.getElementById("giftImage");
 
     if(password === correctPassword){
-        message.innerHTML = "💖 Em chính là điều ngọt ngào nhất anh có. Chúc em 8/3 thật hạnh phúc và luôn xinh đẹp nhé! 🌷✨";
+        message.innerHTML = "💖 Anh chúc Shi của anh 8/3 hạnh phúc và ngày càng yêu thương anh hơn, ở nhà học ngoan nha không có quậy và luôn xinh đẹp! 🌷✨";
         image.style.display = "block";
     }else{
         message.innerHTML = "Sai mật khẩu rồi 😝 Thử lại nhé!";
