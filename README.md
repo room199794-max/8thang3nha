@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
@@ -130,7 +129,7 @@ button:hover{
 
     <!-- Ảnh quà (bạn có thể thay link ảnh của riêng bạn vào đây) -->
     <img id="giftImage" 
-    src="https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/645425422_2122776568499053_7282999378241111988_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFGlYxp1y5M2Rdp9DPhEiuBJOGXzPMxOyAk4ZfM8zE7IFMFJ8IQonedT8On5sL10jU427vGcNZqWvBy6vadfW6Q&_nc_ohc=fkPX1WnBNUkQ7kNvwEbaei0&_nc_oc=AdnCEKh1dnWMBbH8W7AqqpSbDuZqOjte7PEphPL31gHHAaC_kXKiL0OiUh_dDE00grM&_nc_zt=23&_nc_ht=scontent.fsgn5-10.fna&_nc_gid=7K_DzR15h3gc9fgZVVhH1g&_nc_ss=8&oh=00_AfsRQYKLW1KGP1Zhg2CcJLWxuXedUqMoPbeww9e4e2IC8A&oe=69AA292B" 
+    src="222.jpg" 
     alt="Quà 8/3">
 </div>
 
