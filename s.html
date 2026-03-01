@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Chúc Mừng 8/3 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    background:linear-gradient(135deg,#ff9ecf,#ffd6ec,#ffc2e2);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Quicksand',sans-serif;
+    overflow:hidden;
+}
+
+/* CARD */
+.card{
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+    width:360px;
+    position:relative;
+    z-index:10;
+    animation:fadeIn 1.5s ease;
+}
+
+h1{
+    font-family:'Pacifico',cursive;
+    font-size:30px;
+    color:#ff4da6;
+}
+
+p{
+    margin-top:15px;
+    font-size:17px;
+    color:#555;
+}
+
+input{
+    margin-top:20px;
+    padding:12px;
+    width:100%;
+    border-radius:25px;
+    border:1px solid #ff4da6;
+    outline:none;
+    text-align:center;
+    font-size:15px;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#ff4da6;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#ff1a8c;
+    transform:scale(1.1);
+}
+
+#message{
+    margin-top:20px;
+    font-weight:bold;
+    color:#ff3399;
+}
+
+#giftImage{
+    display:none;
+    margin-top:20px;
+    width:100%;
+    border-radius:15px;
+    animation:zoomIn 1s ease forwards;
+}
+
+/* HEART */
+.heart{
+    position:absolute;
+    animation:floatUp 4s linear infinite;
+}
+
+@keyframes floatUp{
+    0%{ transform:translateY(0) scale(1); opacity:1; }
+    100%{ transform:translateY(-800px) scale(1.5); opacity:0; }
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(50px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes zoomIn{
+    from{transform:scale(0.5); opacity:0;}
+    to{transform:scale(1); opacity:1;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>Chúc Mừng 8/3 🌸</h1>
+    <img class="header-image"
+     src="file:///C:/Users/Admin/Downloads/213.jpg"
+     alt="Ảnh 8/3 dễ thương"
+     style="width:200px; height:200px; object-fit:cover; display:block; margin:20px auto; border-radius:20px;">
+    <p>Nhập mật khẩu để mở quà bí mật 🎁</p>
+
+    <input type="password" id="passwordInput" placeholder="Nhập mật khẩu...">
+    <button onclick="checkPassword()">Mở Quà 💌</button>
+
+    <div id="message"></div>
+
+    <!-- Ảnh quà (bạn có thể thay link ảnh của riêng bạn vào đây) -->
+    <img id="giftImage" 
+    src="https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/645425422_2122776568499053_7282999378241111988_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFGlYxp1y5M2Rdp9DPhEiuBJOGXzPMxOyAk4ZfM8zE7IFMFJ8IQonedT8On5sL10jU427vGcNZqWvBy6vadfW6Q&_nc_ohc=fkPX1WnBNUkQ7kNvwEbaei0&_nc_oc=AdnCEKh1dnWMBbH8W7AqqpSbDuZqOjte7PEphPL31gHHAaC_kXKiL0OiUh_dDE00grM&_nc_zt=23&_nc_ht=scontent.fsgn5-10.fna&_nc_gid=7K_DzR15h3gc9fgZVVhH1g&_nc_ss=8&oh=00_AfsRQYKLW1KGP1Zhg2CcJLWxuXedUqMoPbeww9e4e2IC8A&oe=69AA292B" 
+    alt="Quà 8/3">
+</div>
+
+<script>
+const correctPassword = "thuthaodangiu"; // 🔐 Đổi mật khẩu tại đây
+
+function checkPassword(){
+    let password = document.getElementById("passwordInput").value;
+    let message = document.getElementById("message");
+    let image = document.getElementById("giftImage");
+
+    if(password === correctPassword){
+        message.innerHTML = "💖 Em chính là điều ngọt ngào nhất anh có. Chúc em 8/3 thật hạnh phúc và luôn xinh đẹp nhé! 🌷✨";
+        image.style.display = "block";
+    }else{
+        message.innerHTML = "Sai mật khẩu rồi 😝 Thử lại nhé!";
+        image.style.display = "none";
+    }
+}
+
+/* Tạo hiệu ứng tim bay */
+function createHeart(){
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "💖";
+    heart.style.left = Math.random()*100 + "vw";
+    heart.style.bottom = "-20px";
+    heart.style.fontSize = (Math.random()*20 + 15) + "px";
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },4000);
+}
+
+setInterval(createHeart,300);
+
+/* Nhấn Enter để mở quà */
+document.getElementById("passwordInput")
+.addEventListener("keypress",function(e){
+    if(e.key === "Enter"){
+        checkPassword();
+    }
+});
+</script>
+
+</body>
+</html>
